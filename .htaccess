@@ -1,7 +1,24 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} off
+    RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+</IfModule>
+
 Options -Indexes
 Order allow,deny
 Allow from all
 
+RedirectMatch 404 /\.git
+RedirectMatch 404 /vendor/bin
+RedirectMatch 404 /vendor/phpunit
+
+# Forbidden access to install, make sure you comment this line
+# in case you would like to install the app from the web
+RedirectMatch 404 /install
+
+<FilesMatch "Vagrantfile.*|composer.*">
+	Deny from all
+</FilesMatch>
 <FilesMatch ".*\.[A-Za-z0-9]+">
 	Deny from all
 </FilesMatch>
