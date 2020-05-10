@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CollectiveAccess Pawtucket Default Theme\n"
-"POT-Creation-Date: 2020-05-09 19:54+0200\n"
-"PO-Revision-Date: 2020-05-09 19:54+0200\n"
+"POT-Creation-Date: 2020-05-10 16:25+0200\n"
+"PO-Revision-Date: 2020-05-10 16:26+0200\n"
 "Last-Translator: Orestes Sanchez <orestes@estotienearreglo.es>\n"
 "Language-Team: CollectiveAccess <info@collectiveaccess.org>\n"
 "Language: es_ES\n"
@@ -1010,24 +1010,48 @@ msgid "Enter your search terms in the fields below."
 msgstr "Indica lo que quieres buscar rellenando el formulario."
 
 #: views/Search/ca_objects_advanced_search_objects_html.php:12
+msgid "Search across all fields in the database."
+msgstr "Buscar en todos los campos de la base de datos."
+
+#: views/Search/ca_objects_advanced_search_objects_html.php:12
 msgid "Keyword"
 msgstr "Términos clave"
+
+#: views/Search/ca_objects_advanced_search_objects_html.php:18
+msgid "Limit your search to Object Titles only."
+msgstr "Limite su búsqueda solo a Títulos de objetos."
 
 #: views/Search/ca_objects_advanced_search_objects_html.php:18
 msgid "Title"
 msgstr "Título"
 
 #: views/Search/ca_objects_advanced_search_objects_html.php:24
+msgid "Search object identifiers."
+msgstr "Buscar identificadores de objeto."
+
+#: views/Search/ca_objects_advanced_search_objects_html.php:24
 msgid "Accession number"
 msgstr "Identificador del objeto"
+
+#: views/Search/ca_objects_advanced_search_objects_html.php:28
+msgid "Limit your search to object types."
+msgstr "Limite la búsqueda a determinados tipos de elementos."
 
 #: views/Search/ca_objects_advanced_search_objects_html.php:28
 msgid "Type"
 msgstr "Tipo"
 
 #: views/Search/ca_objects_advanced_search_objects_html.php:34
+msgid "Search records of a particular date or date range."
+msgstr "Buscar registros de una fecha o intervalo de fechas determinado."
+
+#: views/Search/ca_objects_advanced_search_objects_html.php:34
 msgid "Date range <i>(e.g. 1970-1979)</i>"
 msgstr "Intervalo de fecha <i>(ej. 1970-1979)</i>"
+
+#: views/Search/ca_objects_advanced_search_objects_html.php:40
+msgid "Search records within a particular collection."
+msgstr "Buscar registros dentro de una colección determinada."
 
 #: views/Search/ca_objects_advanced_search_objects_html.php:40
 msgid "Collection"
@@ -1216,10 +1240,6 @@ msgstr "URL del elemento"
 msgid "Email address"
 msgstr "Correo electrónico"
 
-#: conf/gallery.conf:2
-msgid "Featured Galleries"
-msgstr "Galerías destacadas"
-
 #: conf/search.conf:92 conf/search.conf:94
 msgid "Objects"
 msgstr "Objetos"
@@ -1227,3 +1247,6 @@ msgstr "Objetos"
 #: conf/search.conf:93
 msgid "Object"
 msgstr "Objeto"
+
+#~ msgid "Featured Galleries"
+#~ msgstr "Galerías destacadas"
